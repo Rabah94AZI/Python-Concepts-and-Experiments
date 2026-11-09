@@ -68,3 +68,19 @@ b = None
 
 print("a == b:", a == b)
 print("a is b:", a is b)
+
+# TEST 7: copy
+print("\n--- TEST 7: copy ---")
+a = [10, 20]
+b = a
+c = a.copy()
+
+print(a == c)
+print(a == b)
+print(a is b)
+print(a is c)
+
+b.append(30)
+print(a)
+print(b)
+print(c)
